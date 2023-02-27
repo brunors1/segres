@@ -1,0 +1,25 @@
+div .container {
+	justify-content: space-evenly
+}
+
+.nav-link {
+	color: whitesmoke;
+}
+
+#home {
+	background: #0d6efd;
+	color: whitesmoke;
+}
+
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid whitesmoke;
+}
+
+footer p a {
+	margin: 5px 15px;
+}
+
+footer a {
+	color: whitesmoke;
+}
