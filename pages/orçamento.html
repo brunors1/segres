@@ -51,7 +51,6 @@
           </div>
       </nav>
     </header><!--/fim Cabecalho -->
-
     <section id="home"><!-- Início seção home -->
       <div class="container">
         <div class="row">
@@ -64,7 +63,7 @@
             </div>
           </div><!--/fim textos da seção -->
           <div class="col-md-6 d-none d-md-block">
-            <img src="../img/app-mobile.png" class="img-fluid mx-auto d-block">
+            <img src="../img/orçamento.png" class="img-fluid mx-auto d-block">
           </div>
         </div>
       </div>
@@ -73,57 +72,95 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 d-flex">
-                <form class="align-self-center">
-                    <fieldset>
-                      <legend>Escolha suas coberturas abaixo:</legend>
-                      <div class="mb-3">
-                        <label for="disabledTextInput" class="form-label fw-semibold">Cobertura necessária:</label>
-                        <input type="text" id="disabledTextInput" class="form-control" placeholder="Incêndio, Queda de raio e Explosão" disabled>
-                      </div>
-                      <div class="mb-3">
-                        <label for="disabledSelect" class="form-label fw-semibold">Cobertura adicional:</label>
-                        <div class="form-check form-switch mb-3 mb-3">
-                            <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaDE">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Danos Eletricos</label>
-                        </div>
-                        <div class="form-check form-switch mb-3">
-                            <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaRF">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Roubo e Furto</label>
-                        </div>
-                        <div class="form-check form-switch mb-3">
-                            <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaRFAM">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Roubo e Furto de Aparelhos Moveis</label>
-                        </div>
-                        <div class="form-check form-switch mb-3">
-                            <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaVF">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Vendaval/Furacão</label>
-                        </div>
-                        <div class="form-check form-switch mb-3">
-                            <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaQV">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Quebra de Vidros</label>
-                        </div>
-                        <div class="form-check form-switch mb-3">
-                            <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaRT">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Responsabilidade de Terceiros</label>
-                        </div>
-                        <div class="form-check form-switch mb-3">
-                            <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaAH">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Assistência 24 Horas</label>
-                        </div>
-                        <div class="form-check form-switch mb-3">
-                            <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaAPS">
-                            <label class="form-check-label" for="flexSwitchCheckChecked">Assistência Pet Shop</label>
-                        </div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="disabledTextInput" class="form-label fw-semibold">Valor Total:</label>
-                        <input type="text" id="valorTotal" class="form-control" placeholder="" disabled>
-                      </div>
-                    </fieldset>
-                  </form>
+              <form class="align-self-center">
+                <legend>Preencha com seus dados pessoais, por favor:</legend>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Nome e Sobrenome:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">CPF</label>
+                  <input type="text" class="form-control">
+                  <div class="col-auto">
+                    <span class="form-text">
+                      Somente números, sem pontos ou traços.
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Telefone:</label>
+                  <input type="text" class="form-control">
+                  <div class="col-auto">
+                    <span class="form-text">
+                      Somente números, com DDD.
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">E-mail:</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Informe o valor aproximado de sua residência:</label>
+                  <input type="text" class="form-control">
+                  <div class="col-auto">
+                    <span class="form-text">
+                      Nessa etapa é importante considerar o valor dos itens internos e também do imovel junto.
+                    </span>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+              </form>
             </div>
             <div class="col-md-6">
-              <img src="../img/family.png" class="img-fluid">
+              <form class="align-self-center">
+                <fieldset>
+                  <legend>Escolha suas coberturas abaixo:</legend>
+                  <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label fw-semibold">Cobertura necessária:</label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Incêndio, Queda de raio e Explosão" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledSelect" class="form-label fw-semibold">Cobertura adicional:</label>
+                    <div class="form-check form-switch mb-3 mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaDE">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Danos Eletricos</label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaRF">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Roubo e Furto</label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaRFAM">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Roubo e Furto de Aparelhos Moveis</label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaVF">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Vendaval/Furacão</label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaQV">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Quebra de Vidros</label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaRT">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Responsabilidade de Terceiros</label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaAH">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Assistência 24 Horas</label>
+                    </div>
+                    <div class="form-check form-switch mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" name="checkbox"  value="100" onclick="total()" id="coberturaAPS">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Assistência Pet Shop</label>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="disabledTextInput" class="form-label fw-semibold">Valor Total:</label>
+                    <input type="text" id="valorTotal" class="form-control" placeholder="" disabled>
+                  </div>
+                </fieldset>
+              </form>
             </div>
           </div>
         </div>

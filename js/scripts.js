@@ -8,4 +8,4 @@ function total() {
         }
     }
     console.log("R$ " + total);
-}
+    }
