@@ -1,10 +1,9 @@
-//função para calcular os checkbox / total//
 class Calculator {
     constructor(total) {
         this.check = document.getElementsByName("checkbox");
         this.total = total;
     }
-// Calculando o total de acordo com o checkbox selecionado na página "Orcamento.html"
+    // Calculando o total de acordo com o checkbox selecionado na página "Orcamento.html"
     calcularTotal() {
         this.total = 500;
         for (var i = 0; i < this.check.length; i++) {
@@ -21,3 +20,17 @@ class Calculator {
 }
 
 const valorAtualizado = new Calculator();
+
+//atividade 06 
+
+
+const form = document.querySelector('#myForm');
+const btn = document.querySelector('#btn');
+
+btn.addEventListener('click', (event) => {
+    event.preventDefault(); // impede o envio padrão do formulário
+    const formData = new FormData(form);
+    const formValues = Object.fromEntries(formData.entries()); // converte FormData em objeto
+    const formArray = Object.values(formValues); // converte objeto em array
+    console.log(formArray);
+});
