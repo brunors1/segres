@@ -14,8 +14,9 @@ class Calculator {
         //Convertendo o valor final em moeda
         const opcoes = { style: 'currency', currency: 'BRL' };
         const valorFormatado = this.total.toLocaleString('pt-BR', opcoes);
-        console.log(valorFormatado);
-
+        //exibindo valor total no input
+        const inputValor = document.getElementById("totalValue");
+        inputValor.innerText = ` ${valorFormatado}`
     }
 }
 
@@ -44,6 +45,10 @@ class FormValue {
         // values() extrai apenas os valores do objeto formValues e cria um array com esses valores
         const formArray = Object.values(formValues);
         console.log(formArray);
+        alert(formArray);
     }
 }
 const formHandler = new FormValue('myForm', 'btn');
+
+
+
