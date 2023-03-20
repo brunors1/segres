@@ -62,6 +62,7 @@
         <div class="col-md-6 d-flex"><!-- Textos da seção -->
           <div class="align-self-center">
             <h1 class="display-4 fw-semibold">O seguro do jeito que você quer!</h1>
+            <br>
             <p>
               Aqui você pode simular uma apólice de seguros, escolha entre as diversas coberturas e monte seu seguro da
               forma que achar melhor.
@@ -77,7 +78,7 @@
   <section class="caixa"><!--/Início seção orçamento -->
     <div class="container">
       <div class="row">
-        <div class="col-md-6 d-flex">
+        <div class="col-md-6 d-flex mb-3">
           <form id="myForm" class="align-self-center">
             <legend>Preencha com seus dados pessoais, por favor:</legend>
             <div class="mb-3">
@@ -115,10 +116,9 @@
                 </span>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary mb-3" id="btn">Enviar</button>
           </form>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 mb-3">
           <form class="align-self-center">
             <fieldset>
               <legend>Escolha suas coberturas abaixo:</legend>
@@ -132,7 +132,7 @@
                 <div class="form-check form-switch mb-3 mb-3">
                   <input class="form-check-input" type="checkbox" role="switch" name="checkbox" value="100"
                     onclick="valorAtualizado.calcularTotal()" id="coberturaDE">
-                  <label class="form-check-label" for="flexSwitchCheckChecked">Danos Eletricos</label>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Danos Elétricos</label>
                 </div>
                 <div class="form-check form-switch mb-3">
                   <input class="form-check-input" type="checkbox" role="switch" name="checkbox" value="100"
@@ -142,12 +142,12 @@
                 <div class="form-check form-switch mb-3">
                   <input class="form-check-input" type="checkbox" role="switch" name="checkbox" value="100"
                     onclick="valorAtualizado.calcularTotal()" id="coberturaRFAM">
-                  <label class="form-check-label" for="flexSwitchCheckChecked">Roubo e Furto de Aparelhos Moveis</label>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Roubo e Furto de Aparelhos Móveis</label>
                 </div>
                 <div class="form-check form-switch mb-3">
                   <input class="form-check-input" type="checkbox" role="switch" name="checkbox" value="100"
                     onclick="valorAtualizado.calcularTotal()" id="coberturaVF">
-                  <label class="form-check-label" for="flexSwitchCheckChecked">Vendaval/Furacão</label>
+                  <label class="form-check-label" for="flexSwitchCheckChecked">Vendaval, Furacão, Ciclone, Tornado e Granizo</label>
                 </div>
                 <div class="form-check form-switch mb-3">
                   <input class="form-check-input" type="checkbox" role="switch" name="checkbox" value="100"
@@ -170,16 +170,17 @@
                   <label class="form-check-label" for="flexSwitchCheckChecked">Assistência Pet Shop</label>
                 </div>
               </div>
-              <div class="mb-3">
+              <div class="mt-4">
                 <label for="disabledTextInput" class="form-label fw-semibold">Valor Total: <label
                     class="form-label fw-semibold" id="totalValue"> R$ 500,00
-                  </label></label>
+                </label></label>
                 <!-- <input type="text" id="valorTotal" class="form-control"> -->
               </div>
             </fieldset>
           </form>
         </div>
       </div>
+      <button type="submit" class="btn btn-primary mb-3" id="btn">Enviar</button>
     </div>
   </section><!--/FIM seção orçamento -->
 
