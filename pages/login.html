@@ -64,7 +64,8 @@
             <h1 class="display-4 fw-semibold">Todas as informações em um só lugar!</h1>
             <br>
             <p>
-              Entre na sua conta e consulte em tempo real suas coberturas. Não tem uma conta ainda? se cadastre logo abaixo preenchendo os campos com as suas informações.
+              Entre na sua conta e consulte em tempo real suas coberturas. Não tem uma conta ainda? se cadastre logo
+              abaixo preenchendo os campos com as suas informações.
             </p>
           </div>
         </div><!--/fim textos da seção -->
@@ -78,99 +79,99 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 d-flex">
-            <form class="align-self-center mb-4 border rounded border-primary p-4 form_custom">
-                <fieldset>
-                  <div class="mb-3">
-                    <legend class="mb-3 text-primary fs-2 fw-semibold">Entre na sua conta:</legend>
-                    <label for="exampleInputEmail1" class="form-label fw-semibold">E-mail:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com ninguém.</div>
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label fw-semibold">Senha:</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                  </div>
-                  <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Continuar logado.</label>
-                  </div>
-                  <button type="submit" class="btn btn-primary mb-3">Entrar</button>
-                </fieldset>
-                <a href="#" class="link-primary fw-semibold">Esqueceu sua senha?</a>
-              </form>
+          <form class="align-self-center mb-4 border rounded border-primary p-4 form_custom" id="formLogin">
+            <fieldset>
+              <div class="mb-3">
+                <legend class="mb-3 text-primary fs-2 fw-semibold">Entre na sua conta:</legend>
+                <label for="exampleInputEmail1" class="form-label fw-semibold">E-mail:</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com ninguém.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label fw-semibold">Senha:</label>
+                <input type="password" class="form-control" id="inputPassword">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Continuar logado.</label>
+              </div>
+              <button type="submit" class="btn btn-primary mb-3" id="submitButton">Entrar</button>
+            </fieldset>
+            <a href="#" class="link-primary fw-semibold">Esqueceu sua senha?</a>
+          </form>
         </div>
         <div class="col-md-6 border rounded border-primary form_custom">
-            <form class="row g-3 m-3">
-                <legend class="mb-3 text-primary fs-2 fw-semibold">Ainda não tem uma conta?</legend>
-                <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label fw-semibold">E-mail:</label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label fw-semibold">Senha:</label>
-                  <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label fw-semibold">Endereço:</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Rua, 123">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress2" class="form-label fw-semibold">Endereço 2:</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, Sala, ou Andar">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputCity" class="form-label fw-semibold">Cidade:</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="col-md-3">
-                  <label for="inputState" class="form-label fw-semibold">Estado:</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Escolha...</option>
-                    <option>AC</option>
-                    <option>AL</option>
-                    <option>AP</option>
-                    <option>AM</option>
-                    <option>BA</option>
-                    <option>CE</option>
-                    <option>DF</option>
-                    <option>ES</option>
-                    <option>GO</option>
-                    <option>MA</option>
-                    <option>MT</option>
-                    <option>MS</option>
-                    <option>MG</option>
-                    <option>PA</option>
-                    <option>PB</option>
-                    <option>PR</option>
-                    <option>PE</option>
-                    <option>PI</option>
-                    <option>RJ</option>
-                    <option>RN</option>
-                    <option>RS</option>
-                    <option>RO</option>
-                    <option>RR</option>
-                    <option>SC</option>
-                    <option>SP</option>
-                    <option>SE</option>
-                    <option>TO</option>
-                  </select>
-                </div>
-                <div class="col-md-3">
-                  <label for="inputZip" class="form-label fw-semibold">CEP:</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Declaro que todas as informações acima são verdadeiras.
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12 mb-3">
-                  <button type="submit" class="btn btn-primary">Cadastre-se</button>
-                </div>
-              </form>
+          <form class="row g-3 m-3">
+            <legend class="mb-3 text-primary fs-2 fw-semibold">Ainda não tem uma conta?</legend>
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label fw-semibold">E-mail:</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label fw-semibold">Senha:</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label fw-semibold">Endereço:</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="Rua, 123">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label fw-semibold">Endereço 2:</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, Sala, ou Andar">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label fw-semibold">Cidade:</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-3">
+              <label for="inputState" class="form-label fw-semibold">Estado:</label>
+              <select id="inputState" class="form-select">
+                <option selected>Escolha...</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+              </select>
+            </div>
+            <div class="col-md-3">
+              <label for="inputZip" class="form-label fw-semibold">CEP:</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Declaro que todas as informações acima são verdadeiras.
+                </label>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <button type="submit" class="btn btn-primary">Cadastre-se</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -215,7 +216,7 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
 
-  <script src="../js/scripts.js"></script>
+  <script src="../js/scripts_login.js"></script>
 
 </body>
 

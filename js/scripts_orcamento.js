@@ -22,8 +22,6 @@ class Calculator {
 
 const valorAtualizado = new Calculator();
 
-//atividade 06 
-
 class FormValue {
     // O construtor da classe recebe formId e btnId e busca os elementos do formulário e botão na página HTML
     constructor(formId, btnId) {
@@ -46,9 +44,7 @@ class FormValue {
         const formArray = Object.values(formValues);
         console.log(formArray);
         alert(formArray);
+
     }
 }
-const formHandler = new FormValue('myForm', 'btn');
-
-
-
+const formHandler = new FormValue('myForm', 'btn-submit');
