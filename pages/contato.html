@@ -56,23 +56,6 @@
       </div>
     </nav>
   </header><!--/fim Cabecalho -->
-  <section id="home"><!-- Início seção capa -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 d-flex"><!-- Textos da seção -->
-          <div class="align-self-center">
-            <h1 class="display-4 fw-semibold">Entre em contato conosco!</h1>
-            <p>
-              Tem dúvidas, sugestões, reclamações ou elogios? Entre em contato com nossa equipe para que possamos ajuda-lo da melhor forma possível.
-            </p>
-          </div>
-        </div><!--/fim textos da seção -->
-        <div class="col-md-6 d-none d-md-block">
-          <img src="../img/contato.png" class="img-fluid mx-auto d-block">
-        </div>
-      </div>
-    </div>
-  </section><!--/fim seção capa -->
   <section class="caixa"><!--/Início seção formulario -->
     <div class="container">
         <div class="row">
@@ -80,28 +63,28 @@
                 <h2 class="mb-4">Formulário de contato</h2>
                 <div class="mb-3">
                     <label for="nome_form" class="form-label fw-semibold">Nome e Sobrenome:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                    <input type="text" class="form-control" id="nome_form">
                 </div>
                 <div class="mb-3">
-                <label for="email_form" class="form-label fw-semibold">E-mail:</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                    <label for="email_form" class="form-label fw-semibold">E-mail:</label>
+                    <input type="email" class="form-control" id="email_form" placeholder="nome@exemplo.com">
                 </div>
                 <div class="mb-3">
-                <label for="solicitação_form" class="form-label fw-semibold">Solicitação:</label>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Selecione...</option>
-                    <option value="1">Dúvidas</option>
-                    <option value="2">Sugestões</option>
-                    <option value="3">Reclamações</option>
-                    <option value="4">Elogios</option>
-                </select>
+                    <label for="solicitacao_form" class="form-label fw-semibold">Solicitação:</label>
+                    <select class="form-select" aria-label="Default select example" id="solicitacao_form">
+                        <option selected>Selecione...</option>
+                        <option value="1">Dúvidas</option>
+                        <option value="2">Sugestões</option>
+                        <option value="3">Reclamações</option>
+                        <option value="4">Elogios</option>
+                    </select>
                 </div>
                 <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label fw-semibold">Comentário:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="comentario_form" class="form-label fw-semibold">Comentário:</label>
+                    <textarea class="form-control" id="comentario_form" rows="3"></textarea>
                 </div>
                 <div class="mb-3">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
+                    <button class="btn btn-primary" type="submit" onclick="enviarFormulario()">Enviar</button>
                 </div>
             </div>
             <div class="col d-none d-md-block align-self-center">
@@ -109,7 +92,7 @@
             </div>
         </div>
         <hr>
-      </div>
+    </div>
   </section><!--/FIM seção formulario -->
   <section class="caixa mb-4"><!--/Início seção recursos -->
     <div class="container">
@@ -201,7 +184,7 @@
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
 
-  <script src="../js/scripts.js"></script>
+  <script src="../js/scripts_contato.js"></script>
 
 </body>
 
