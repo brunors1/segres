@@ -6,7 +6,7 @@ div .container {
 	color: whitesmoke;
 }
 
-#home {
+.capa {
 	background: #0d6efd;
 	color: whitesmoke;
 }
@@ -26,4 +26,8 @@ footer a {
 
 .form_custom {
 	background-color: #EBF1F2;
+}
+
+.swal2-confirm {
+	background-color: #0d6efd !important;
 }
