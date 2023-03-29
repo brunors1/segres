@@ -9,7 +9,8 @@ class formLogin {
         this.submit.addEventListener('click', this.pressSubmit.bind(this));
 
         //chamando funcoes de validacao e funcao de converter os valores para JSON
-        this.validation()
+        // localStorage.getItem('email') && localStorage.getItem('senha') != null ? this.atualizarValores() : alert("Sem usuário e senha");
+
         this.convertJson()
     }
 
@@ -22,17 +23,14 @@ class formLogin {
         localStorage.setItem('senha', this.password.value);
 
         //chamando as funcoes novamente para que seja feita a atualizacao apos o click no botao de login 
-        this.validation()
         this.convertJson()
     }
 
-    validation() {
-        //validando se o localStorage está vazio
-        if (localStorage.getItem('email') && localStorage.getItem('senha') != null) {
-            this.email.value = `${localStorage.getItem('email')}`;
-            this.password.value = `${localStorage.getItem('senha')}`;
-        }
+    atualizarValores() {
+        this.email.value = `${localStorage.getItem('email')}`,
+            this.password.value = `${localStorage.getItem('senha')}`
     }
+
     //funcao para transformar os dados do localStorage em um JSON
     convertJson(dadosAcesso) {
         let arrayDados = [
@@ -46,6 +44,17 @@ class formLogin {
 //chamando a classe e definindo o valor dos parametros (ids)
 const dataLogin = new formLogin('inputEmail', 'inputPassword', 'submitButton');
 
+const resetPassword = document.getElementById('resetPassword');
 
+resetPassword.addEventListener('click', (event) => {
+    event.preventDefault();
+    Swal.fire({
+        title: 'Esqueceu sua senha?',
+        text: 'Digite o e-mail abaixo para receber um link de recuperação',
+        input: 'email',
+        showCancelButton: true,
+        confirmButtonText: 'Enviar',
+        cancelButtonText: 'Cancelar'
+    }).then()
 
-
+})
