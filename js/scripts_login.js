@@ -2,6 +2,7 @@
 const form = document.querySelector('.form_custom form');
 const email = document.getElementById('inputEmail4');
 const password = document.getElementById('inputPassword4');
+const name = document.getElementById('inputName');
 const address = document.getElementById('inputAddress');
 const address2 = document.getElementById('inputAddress2');
 const city = document.getElementById('inputCity');
@@ -48,6 +49,7 @@ function saveData() {
   const data = {
     email: email.value,
     password: password.value,
+    name: name.value,
     address: address.value,
     address2: address2.value,
     city: city.value,
