@@ -46,29 +46,39 @@ zip.addEventListener('blur', fillAddressByZip);
 
 // Função para salvar os dados no localStorage
 function saveData() {
-  const data = {
-    email: email.value,
-    password: password.value,
-    name: name.value,
-    address: address.value,
-    address2: address2.value,
-    city: city.value,
-    state: state.value,
-    zip: zip.value,
-  };
-  localStorage.setItem('userData', JSON.stringify(data));
+  // Verifica se todos os campos estão preenchidos
+  if (email.value && password.value && name.value && address.value && city.value && state.value && zip.value) {
+    const data = {
+      email: email.value,
+      password: password.value,
+      name: name.value,
+      address: address.value,
+      address2: address2.value,
+      city: city.value,
+      state: state.value,
+      zip: zip.value,
+    };
+    localStorage.setItem('userData', JSON.stringify(data));
+    // Alerta de cadastro efetuado com sucesso
+    Swal.fire({
+      icon: 'success',
+      title: 'Cadastro efetuado com sucesso!',
+    });
+  } else {
+    // Alerta de erro
+    Swal.fire({
+      icon: 'error',
+      title: 'Preencha todos os campos!',
+    });
+  }
 }
 
 // Adicionando evento de envio do formulário para chamar a função de salvar dados
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   saveData();
-  // Alerta de cadastro efetuado com sucesso
-  Swal.fire({
-    icon: 'success',
-    title: 'Cadastro efetuado com sucesso!',
-  });
 });
+
 
 // Login na página
 const formLogin = document.querySelector('#formLogin');
