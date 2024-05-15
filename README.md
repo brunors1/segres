@@ -1,5 +1,8 @@
 ![image](https://github.com/brunors1/segres/assets/117781967/fb6865e8-7e48-4f46-b85c-2acc860742af)
 
+![image](https://github.com/brunors1/segres/assets/117781967/470497b1-bd97-423b-b9b0-07d4cc68ad6c)
+
+
 # Segres
 
 ## Descrição
